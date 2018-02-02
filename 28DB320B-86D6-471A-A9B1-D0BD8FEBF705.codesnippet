@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)showTipsAlertWithTitle:(NSString *)title subTitle:(NSString *)subTitle  cAction:(SEL)cAction hasCancel:(BOOL)hasCancel{
+    
+    UIAlertController *alertVC =[UIAlertController alertControllerWithTitle:title message:subTitle preferredStyle:UIAlertControllerStyleAlert];
+    __block  ViewController *selfVC = self;
+    __block SEL myAction = cAction;
+    
+    UIAlertAction *okBtn = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault  handler:^(UIAlertAction * _Nonnull action) {
+        if ( [selfVC respondsToSelector:cAction]) {
+            [selfVC performSelector:cAction];
+        }else{
+            myAction = nil;
+        }
+        
+    }];
+    
+    if (hasCancel) {
+        UIAlertAction *cancelBtn = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault  handler:nil];
+        [alertVC addAction:cancelBtn];
+    }
+    [alertVC addAction:okBtn];
+    
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>28DB320B-86D6-471A-A9B1-D0BD8FEBF705</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>showTipsAlert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

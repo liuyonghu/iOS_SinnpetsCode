@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)getSMSCode:(UIButton *)sender{
+    if (![_accountTextfiled.text isEqualToString:@""]) {
+        
+        NSDictionary *parameters = @{
+                                     @"packetHead": @{
+                                             @"serviceCode": @"4001",
+                                             @"sign":NetSignKEY,
+                                             @"version":@"1.0"
+                                             },
+                                     @"packetBody": @{
+                                             @"authType":@"registe",
+                                             @"mobilePhone":_accountTextfiled.text
+                                             }
+                                     };
+        
+        [[NetHelper defaultNetHepler] postTaskWithParameter:parameters callBacKBlock:^(NSDictionary *reponseData, NSString *message) {
+            if (![message isEqualToString:@"success"]) {
+                [self showTipsAlertWithTitle:@"提示" subTitle:message];
+            }
+            
+        }];
+        
+        sender.userInteractionEnabled = NO;
+        _smsTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(changeTitle) userInfo:nil repeats:YES];
+        [_smsTimer fire];
+    }else{
+        [self showTipsAlertWithTitle:@"提示" subTitle:@"请输入手机号！"];
+    }
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1C2FE6D8-4E03-4259-8D98-963348A32BAB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>jwyg-getSMSCode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

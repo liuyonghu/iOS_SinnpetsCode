@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.title = @"重置支付密码";
+
+self.navigationController.navigationBar.translucent = NO;
+UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+[button setFrame:CGRectMake(0, 0, 25, 25)];
+[button setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"返回" ofType:@"png"]] forState:UIControlStateNormal];
+[button addTarget:self action:@selector(backToAccountPage:) forControlEvents:UIControlEventTouchUpInside];
+self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+
+UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+[button1 setFrame:CGRectMake(0, 0, 25, 25)];
+[button1 setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"add" ofType:@"png"]] forState:UIControlStateNormal];
+[button1 addTarget:self action:@selector(rightBarbuttonAddAction:) forControlEvents:UIControlEventTouchUpInside];
+self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button1];
+
+
+
+#pragma mark --page method --
+- (void)backToAccountPage:(UIButton *)sender{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)rightBarbuttonAddAction:(UIButton *)sender{
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ADEEF2DB-673C-49B6-AE29-95BE610AFA0F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pageTitleAndBarbuttonSet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

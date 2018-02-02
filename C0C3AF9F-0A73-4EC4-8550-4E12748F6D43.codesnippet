@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+@property(strong,nonatomic)Paramters *parameters;
+
+
+- (Paramters *)parameters{
+    if (!_parameters) {
+        _parameters  = [[Paramters alloc]init];
+        _parameters.token = [NetHelper defaultNetHepler].token;
+    }
+    return _parameters;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C0C3AF9F-0A73-4EC4-8550-4E12748F6D43</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>YHParameters</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
