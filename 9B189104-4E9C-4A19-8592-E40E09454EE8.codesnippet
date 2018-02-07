@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>YH_alert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> [UIAlertController showTipsAlertWithTitle:&lt;#@"提示"#&gt; subTitle:&lt;#@"请阅读并勾选协议。"#&gt; cAction:&lt;#selector#&gt;hasCancel:&lt;#YES_OR_NO#&gt;  addTarget:&lt;#viewcontroller#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B189104-4E9C-4A19-8592-E40E09454EE8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>YH_alert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UIViewController *)getCurrentViewController{
+    UIResponder *next = [self nextResponder];
+    do {
+        if ([next isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)next;
+        }
+        next = [next nextResponder];
+    } while (next != nil);
+    return nil;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>47DACF4C-D628-4EB0-9199-D8B0522D28E3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>currentVc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
