@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yh_available</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (@available(&lt;#iOS 11.0, *#&gt;)) {
+    &lt;#self.showTableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;#&gt;
+ 
+    } else {
+    &lt;#self.automaticallyAdjustsScrollViewInsets = NO;#&gt;
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>56C1BA2D-8663-4DD6-A57B-AB910EB90891</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yh_available</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
