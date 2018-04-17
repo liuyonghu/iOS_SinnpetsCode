@@ -3,29 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>yh_available</string>
+	<string>OC_YH_NavigationTItle</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>if (@available(&lt;#iOS 11.0, *#&gt;)) {
-    &lt;#self.showTableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;#&gt;
- 
-    } else {
-    &lt;#self.automaticallyAdjustsScrollViewInsets = NO;#&gt;
-    }</string>
+	<string>self.navigationItem.title = @"发现";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>56C1BA2D-8663-4DD6-A57B-AB910EB90891</string>
+	<string>31BCBF6F-4CB9-4CD0-AAAA-02DDF064FF8D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC_YH_NavigationTItle</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>yh_available</string>
+	<string>OC_YH_NavigationTItle</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
