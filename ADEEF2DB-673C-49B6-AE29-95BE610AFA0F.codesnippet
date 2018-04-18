@@ -26,7 +26,7 @@ self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomV
 
 
 
-#pragma mark --page method --
+//MARK: --page method --
 - (void)backToAccountPage:(UIButton *)sender{
     [self.navigationController popViewControllerAnimated:YES];
 }
