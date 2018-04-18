@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yh_pageTitleAndBarbuttonSet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -37,6 +39,8 @@ self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomV
 	<string>ADEEF2DB-673C-49B6-AE29-95BE610AFA0F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>pageTitleAndBarbuttonSet</string>
 	<key>IDECodeSnippetUserSnippet</key>
